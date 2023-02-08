@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 const api = require('./routes/auth.routes')
 
 mongoose
-  .connect('mongodb+srv://sy4rif:Abcd1234@cluster0.kayg19c.mongodb.net/?retryWrites=true&w=majority')
+  .connect(process.env.MONGODB_URI)
   .then((x) => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
