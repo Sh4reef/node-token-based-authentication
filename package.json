@@ -4,7 +4,7 @@
   "description": "A node token token-based user authentication REST API",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Digamber",
   "license": "ISC",
@@ -19,8 +19,5 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.0",
     "mongoose-unique-validator": "^3.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
   }
 }
